@@ -145,7 +145,7 @@ class Snake(GameObject):
 
 
 def handle_keys(game_object):
-    # Функция обработки действий пользователя.
+    """Функция обработки действий пользователя."""
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
@@ -162,7 +162,7 @@ def handle_keys(game_object):
 
 
 def main():
-    # Инициализация Pygame.
+    """Инициализация Pygame."""
     pygame.init()
     apple = Apple()
     snake = Snake()
