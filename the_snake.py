@@ -49,7 +49,9 @@ class GameObject:
 
     def draw(self):
         """Метод для отрисовки объектов"""
-        pass
+        raise NotImplementedError(
+            f'Класс {self.__class__.__name__} должен реализовать метод draw()'
+        )
 
 
 class Apple(GameObject):
