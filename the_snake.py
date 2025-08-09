@@ -174,8 +174,7 @@ def main():
         clock.tick(SPEED)
 
         handle_keys(snake)
-
-        new_head_position = snake.move()
+        snake.move()
 
         snake_head_pos = snake.get_head_position()
         apple_pos = apple.position
